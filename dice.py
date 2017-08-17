@@ -35,8 +35,7 @@ def interface():#Handles I/O for the program
     choice = input("Would you like to roll again? Y/N")#Asks the user if they want to play again
 
     if (choice.lower() == "y" or choice.lower() == "yes"):# if the answer is yes restart
-
-        main()
+        interface()
         
     else:#or it exits
         

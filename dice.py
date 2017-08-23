@@ -17,7 +17,7 @@ def interface():#Handles I/O for the program
 
             #Displays error message and restarts the program
             print("Please pick a number bigger than 0.\n\n")
-            main()
+            interface()
             
         else:
             
@@ -26,7 +26,7 @@ def interface():#Handles I/O for the program
     except ValueError:#Handles a value error if one occurs
         #Prints error message and resets program
         print("Please input a whole number, thank you.\n\n")
-        main()
+        interface()
         
     print("Rolling the dice!")
     dice = diceRoll(sides)#Calls the diceRoll method
